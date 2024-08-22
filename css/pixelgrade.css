@@ -1,0 +1,66 @@
+.pixelgrade {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem; 
+}
+
+.pixelgrade .img-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.pixelgrade .img-container img {
+    max-width: 100%;
+    height: auto; 
+    transform: scale(1.2);
+}
+
+.pixelgrade-info {
+    flex: 1.75;
+}
+
+.pixelgrade-info h1 {
+    color: #484545;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.pixelgrade-info p {
+    color: #6b7280;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .pixelgrade .img-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .pixelgrade {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .img-container, .pixelgrade-info {
+        flex: none;
+        width: 100%;
+    }
+
+    .img-container img {
+        max-width: 80%;
+    }
+
+    .pixelgrade-info .register-btn {
+        width: 70%;
+    }
+}
